@@ -6,14 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jason White Portfolio V2</title>
+    <link rel = "stylesheet" href = "assets/style.css">
 </head>
 <body>
     <!-- Header area, displays at very top of screen! -->
     <!-- Includes navigation bar and title logo -->
-    <header>
-        <h3> {JSONdadalwhite} </h3>
-    <nav>
-        <ul>
+    <header class = header>
+        <h3> {JSONadalwhite} </h3>
+    <nav class="nav">
+        <ul class = >
             <li><a href = "#about-me">About Me</a></li>
             <li><a href = "#services">What I Do</a></li>
             <li><a href = "#projects">Projects</a></li>
@@ -22,14 +23,14 @@
     </nav>
     </header>
     <!-- Title Section, initial home page of website! -->
-    <section>
+    <section class = "section">
         <h1> Hi :), I am <strong>Jason Adal White</strong></h1>
         <p>Aspriing Software Developer!</p>
         <!-- Add image of myself below -->
         <img src = "" alt = "">
     </section>
     <!-- About Me Section --> 
-    <section class = "about-me">
+    <section class = "section" id = "about-me">
         <h2>Who I Am</h2>
         <p>Aspiring Software Developer out of South Carolina</p>
         <div>
@@ -48,31 +49,47 @@
 
     </section>
     <!-- Services Section -->
-    <section class = "services">
+    <section class = "section" id = "services">
         <h2>What I Do:</h2>
         <div>
-            <h3>M3RN</h3>
-            <p> Currently learning how to implement full stack technology, which includes MongoDB, Express.js, React.js and Node.js
-                I am also learning how to efficiently integrate third party API's into my applications!
-            </p>
-        </div>
-
-        <div>
             <h3>HTML5/ CSS and CSS3 / JavaScript</h3>
-            <p>
+            <p> 
                 Can build front end applications and websites from scratch using a combination of HTML, CSS, and JavaScript!
             </p>
         </div>
 
         <div>
+            <h3>MERN/ Other Skills</h3>
+            <p>
+                <ul>
+                    <li>
+                        Fluent use in MongoDB
+                    </li>
+                    <li>
+                        Fluent use in Express.js
+                    </li>
+                    <li>
+                        Fluency in React.js
+                    </li>
+                    <li>
+                        Fluency in Node.js
+                    </li>
+                    <li>
+                        Fluent use of SQL
+                    </li>
+                </ul>
+            </p>
+        </div>
+
+        <div>
             <h3>Networking and Social Coding</h3>
-            <p>Apply the accepted and standard basic of social coding - including source control, issue tracking, and functional
+            <p>Constantly applying the accepted and standard basics of social coding - including source control, issue tracking, and functional
                 feedback - as part of the development community, while building an application. 
             </p>
         </div>
     </section>
         <!-- Projects Section -->
-    <section class = "my-projects">
+    <section class = "section" id = "projects">
         <p>
             Collection personal and group projects :) I'll fill these in over time, this site is still a work in progress.
         </p>
@@ -109,8 +126,8 @@
         </div>
     </section>
 
-    <footer>
-        <a href = "mailto:auezovfan@gmail.com" class = "footer-link">auezovfan@gmail.com</a>
+    <footer class = "footer" id = "contact">
+        <a href = "mailto:auezovfan@gmail.com">auezovfan@gmail.com</a>
         <ul>
             <li>
                 <!-- insert instagram link -->
