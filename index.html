@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jason White Portfolio V2</title>
+    <!-- Links and Favicon -->
+    <link href = "assets/images/icebear.jpg" rel = "icon">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2923e690c4.js" crossorigin="anonymous"></script>
     <link rel = "stylesheet" href = "assets/style.css">
 </head>
 <body>
@@ -14,7 +18,7 @@
     <header class = header>
         <h3> {JSONadalwhite} </h3>
     <nav class="nav">
-        <ul class = >
+        <ul>
             <li><a href = "#about-me">About Me</a></li>
             <li><a href = "#services">What I Do</a></li>
             <li><a href = "#projects">Projects</a></li>
@@ -23,14 +27,16 @@
     </nav>
     </header>
     <!-- Title Section, initial home page of website! -->
-    <section class = "section">
-        <h1> Hi :), I am <strong>Jason Adal White</strong></h1>
-        <p>Aspriing Software Developer!</p>
+    <section class = "intro" id = "home">
+        <h1 class = "section__title section__title--intro">
+            Hi, I am <strong>Jason Adal White</strong>
+        </h1>
+        <p class = "section__subtitle section__subtitle--intro">aspiring software developer</p>
         <!-- Add image of myself below -->
-        <img src = "" alt = "">
+        <img src = "assets/images/jason-white.jpg" alt = "image of jason white" class = "intro__img">
     </section>
     <!-- About Me Section --> 
-    <section class = "section" id = "about-me">
+    <section class = "section about-me" id = "about-me">
         <h2>Who I Am</h2>
         <p>Aspiring Software Developer out of South Carolina</p>
         <div>
@@ -44,12 +50,12 @@
             </p>
         </div>
         <!-- insert picture of myself here! -->
-        <img src = "" alt = "">
+        <img src = "assets/images/jason-white-2.jpg" alt = "image of jason white" class = "intro__img">
 
 
     </section>
     <!-- Services Section -->
-    <section class = "section" id = "services">
+    <section class = "section services" id = "services">
         <h2>What I Do:</h2>
         <div>
             <h3>HTML5/ CSS and CSS3 / JavaScript</h3>
@@ -89,56 +95,59 @@
         </div>
     </section>
         <!-- Projects Section -->
-    <section class = "section" id = "projects">
+    <section class = "my-projects" id = "projects">
         <p>
-            Collection personal and group projects :) I'll fill these in over time, this site is still a work in progress.
+            Collection of personal and group projects :) I'll fill these in over time, this site is still a work in progress.
         </p>
         <div class = "portfolio">
 
-            <a href = 'portfolio-item.html' class = "portfolio-item">
-                <img src ="" alt = "" class = "portfolio_img">
+            <a href = 'portfolio-item.html' class = "portfolio__item">
+                <img src ="assets/images/crowdsurf.png" alt = "crowdsurf logo" class = "portfolio_img">
             </a>
 
-            <a href = 'portfolio-item.html' class = "portfolio-item">
-                <img src ="" alt = "" class = "portfolio_img">
+            <a href = 'panda-wave.html' class = "portfolio__item">
+                <img src ="assets/images/panda_wave.jpg" alt = "panda_waving" class = "portfolio__img">
             </a>
 
-            <a href = 'portfolio-item.html' class = "portfolio-item">
-                <img src ="" alt = "" class = "portfolio_img">
+            <a href = 'panda-wave.html' class = "portfolio__item">
+                <img src ="assets/images/panda_wave.jpg" alt = "panda_waving" class = "portfolio__img">
             </a>
 
-            <a href = 'portfolio-item.html' class = "portfolio-item">
-                <img src ="" alt = "" class = "portfolio_img">
+            <a href = 'panda-wave.html' class = "portfolio__item">
+                <img src ="assets/images/panda_wave.jpg" alt = "panda_waving" class = "portfolio__img">
             </a>
 
-            <a href = 'portfolio-item.html' class = "portfolio-item">
-                <img src ="" alt = "" class = "portfolio_img">
+            <a href = 'panda-wave.html' class = "portfolio__item">
+                <img src ="assets/images/panda_wave.jpg" alt = "panda_waving" class = "portfolio__img">
             </a>
 
-            <a href = 'portfolio-item.html' class = "portfolio-item">
-                <img src ="" alt = "" class = "portfolio_img">
+            <a href = 'panda-wave.html' class = "portfolio__item">
+                <img src ="assets/images/panda_wave.jpg" alt = "panda_waving" class = "portfolio__img">
             </a>
 
-            <a href = 'portfolio-item.html' class = "portfolio-item">
-                <img src ="" alt = "" class = "portfolio_img">
+            <a href = 'panda-wave.html' class = "portfolio__item">
+                <img src ="assets/images/panda_wave.jpg" alt = "panda_waving" class = "portfolio__img">
             </a>
 
         </div>
     </section>
 
     <footer class = "footer" id = "contact">
-        <a href = "mailto:auezovfan@gmail.com">auezovfan@gmail.com</a>
-        <ul>
-            <li>
-                <!-- insert instagram link -->
-            </li>
-            <li>
-                <!-- insert github link -->
-            </li>
-            <li>
-                <!-- insert twitter link -->
-            </li>
-        </ul>
+        <footer class = "footer" id = "contact">
+            <a href="mailto:auezovfan@gmail.com" class="footer-link">auezovfan@gmail.com</a>
+            <ul class = "social-list">
+                <li class = "social-list__item"><a class = "social-list__link" href="https://github.com/JasonAdalWhite">
+                    <i class="fa-brands fa-github"></i>
+                </a></li>
+                <li class = "social-list__item"><a class = "social-list__link" href="https://twitter.com/auezovfan">
+                    <i class="fa-brands fa-twitter"></i>
+                </a></li>
+                <li class = "social-list__item"><a class = "social-list__link" href="https://www.instagram.com/jasonadal_/">
+                    <i class="fa-brands fa-instagram"></i>
+                </a></li>
+            </ul>
+    
+        </footer>
     </footer>
     
 </body>
