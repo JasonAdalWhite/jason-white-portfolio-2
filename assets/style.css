@@ -13,8 +13,8 @@
     --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
         0.125em 0.125em 0.25em rgba(0,0,0,.15);
 }
-/* media query for screens above 800px */
-@media (min-width: 800px) {
+/* media queries */
+@media (max-width: 800px) {
     :root{
         --fs-h1: 4.5rem;
         --fs-h2: 3.75rem;
@@ -22,6 +22,53 @@
         --fs-body: 1.125rem;
     }
 }
+@media (min-width: 600px) {
+    .intro {
+        display: grid;
+        width: min-content;
+        margin: 0 auto;
+        grid-column-gap: lem;
+        grid-template-areas:
+            "img title"
+            "img subtitle";
+        grid-template-columns: min-content max-content;
+    }
+    .nav {
+        display: flex;
+        width: min-content;
+        margin: 0 auto;
+        grid-column-gap: 3em;
+        }
+}
+@media(min-width: 300px) {
+    .nav {
+        display: flex;
+        width: min-content;
+        margin: 0 auto;
+        grid-column-gap: 3em;
+        }
+}
+
+    @media (min-width: 800px){
+        .services {
+            display: flex;
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+    
+        }
+    }
+    @media (min-width: 600px) {
+        .about-me {
+            display: grid;
+            grid-template-columns: 1fr 200px;
+            grid-template-areas: 
+                "title img"
+                "subtitle img"
+                "text img";
+            grid-column-gap: 2em;
+        } 
+    }
 /* General Styling */
 html{
     scroll-behavior: smooth;
@@ -115,6 +162,8 @@ section h2 {
 .services {
     background-color: var(--main-color);
     color: var(--accent-color);
+    margin-bottom: 40px;
+    margin: 0 auto;
 }
 /* my projects section */
 .my-projects {
